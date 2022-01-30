@@ -1,3 +1,3 @@
-# Boilerplate for react apps using parcel
+# Boilerplate for react apps using authO
 
-add library context
+
