@@ -1,13 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import dotenv from 'dotenv';
 
-dotenv.config();
 
 // authentication
-import {
-  LoginButton,
-  LogoutButton
-} from './auth'
+import AccessBtn from './components/AccessBtn/AccessBtn';
 
 // pages
 import {
@@ -21,14 +16,12 @@ import {
 // routes
 import ProtectedRoutes from './routes/ProtectedRoutes';
 
-function App() {
-
-  console.log('process env', process.env)
+function App() {  
 
   return (
     <Router>
       <h1>react boilerplate</h1>
-      <LoginButton/>{' '}<LogoutButton/>
+      <AccessBtn/>
       <ul>
         <li><Link to="/">home</Link></li>
         <li><Link to="/about">about</Link></li>

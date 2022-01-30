@@ -10,7 +10,7 @@
     }
   },
   "scripts": {
-    "start": "rm -rf dev && parcel --open --port 3030 --dist-dir dev",
+    "start": "parcel --open --port 3030 --dist-dir dev",
     "build": "parcel build",
     "clear": "rm -rf public && rm -rf dev"
   },
