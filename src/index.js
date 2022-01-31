@@ -8,8 +8,8 @@ import { DOMAIN, CLIENTID } from "./constants";
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dpmsandbox.us.auth0.com"
-      clientId="WUY5maG2RFF72clvvumgorvPKRkTCtJJ"
+      domain={DOMAIN}
+      clientId={CLIENTID}
       redirectUri={window.location.origin}
     >
       <App/>
