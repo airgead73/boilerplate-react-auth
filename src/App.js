@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 // authentication
-import AccessBtn from './components/AccessBtn/AccessBtn';
+import LogBtn from './components/AccessBtn/AccessBtn';
 
 // pages
 import {
@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       <h1>react boilerplate</h1>
-      <AccessBtn/>
+      <LogBtn/>
       <ul>
         <li><Link to="/">home</Link></li>
         <li><Link to="/about">about</Link></li>
