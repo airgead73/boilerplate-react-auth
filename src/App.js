@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-
-
 // authentication
 import { LogBtn } from './components/Log';
 
@@ -40,11 +38,9 @@ function App() {
           <Route path="/profile" element={<Profile/>}/>
         </Route>
         <Route path="*" element={<PageNotFound/>}/>
-      </Routes>
-      
+      </Routes>      
     </Router>
   );
-
 }
 
 export default App;
