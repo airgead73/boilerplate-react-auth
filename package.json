@@ -10,9 +10,7 @@
     }
   },
   "scripts": {
-    "prestart": "env MYTEST=%TEST%",
-    "start": "parcel --open --port 3030 --dist-dir dev",
-    "poststart": "check-env",
+    "start": "DOMAIN=$npm_config_domain CLIENTID=$npm_config_clientid parcel --open --port $npm_config_port --dist-dir dev",
     "prebuild": "npm run clear",
     "build": "parcel build",
     "clear": "rm -rf public dev .parcel-cache"

@@ -19,9 +19,12 @@ import ProtectedRoutes from './routes/ProtectedRoutes';
 
 function App() {  
 
-  return (
+  let { DOMAIN, CLIENTID } = process.env;
+  console.log(DOMAIN)
+
+   return (
     <Router>
-      <h1>react boilerplate</h1>
+      <h1></h1>
       <LogBtn/>
       <ul>
         <li><Link to="/">home</Link></li>
