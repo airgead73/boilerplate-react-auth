@@ -3,6 +3,7 @@
 
 # environment
 .env
+.npmrc
 
 # dependencies
 /node_modules

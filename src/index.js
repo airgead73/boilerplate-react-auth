@@ -5,6 +5,8 @@ import App from './App';
 import { Auth0Provider } from "@auth0/auth0-react";
 import { DOMAIN, CLIENTID } from "./constants";
 
+console.log(process.env.MYTEST);
+
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
