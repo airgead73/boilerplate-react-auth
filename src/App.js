@@ -11,26 +11,25 @@ import {
   About,
   PageNotFound,
   Products,
-  Users
+  Users,
+  Profile
 } from './pages';
 
 // routes
 import ProtectedRoutes from './routes/ProtectedRoutes';
 
-function App() {  
-
-  let { DOMAIN, CLIENTID } = process.env;
-  console.log(DOMAIN)
+function App() {    
 
    return (
     <Router>
-      <h1></h1>
+      <h1>Library App</h1>
       <LogBtn/>
       <ul>
         <li><Link to="/">home</Link></li>
         <li><Link to="/about">about</Link></li>
         <li><Link to="/products">products</Link></li>
         <li><Link to="/users">users</Link></li>
+        <li><Link to="/profile">profile</Link></li>
       </ul>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -38,6 +37,7 @@ function App() {
         <Route element={<ProtectedRoutes/>}>
           <Route path="/products" element={<Products/>}/>
           <Route path="/users" element={<Users/>}/>
+          <Route path="/profile" element={<Profile/>}/>
         </Route>
         <Route path="*" element={<PageNotFound/>}/>
       </Routes>
