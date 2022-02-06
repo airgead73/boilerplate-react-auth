@@ -1,5 +1,6 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import {AuthenticationBtn} from './auth';
+import { Routes, Route } from 'react-router-dom';
+import { AuthenticationBtn } from './auth';
 
 // pages
 import {
@@ -8,6 +9,11 @@ import {
   PageNotFound,
   Profile
 } from './pages';
+
+// components
+import {
+  Nav
+} from './components';
 
 function App() {   
 
@@ -28,6 +34,12 @@ function App() {
     <div>
       <h1>Library App</h1>
       <AuthenticationBtn/>
+      <Nav/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+      </Routes>
     </div>
   )
 
