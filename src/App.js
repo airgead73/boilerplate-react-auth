@@ -14,6 +14,7 @@ import {
 import {
   Nav
 } from './components';
+import ProtectedRoutes from './auth/ProtectedRoutes';
 
 function App() {   
 
@@ -37,8 +38,10 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/profile" element={<Profile/>}/>
+        <Route element={<ProtectedRoutes/>}>
+          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/profile" element={<Profile/>}/>
+        </Route>
       </Routes>
     </div>
   )
