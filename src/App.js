@@ -42,6 +42,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/profile" element={<Profile/>}/>
         </Route>
+        <Route path="*" element={<PageNotFound/>}/>
       </Routes>
     </div>
   )
