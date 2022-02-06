@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
+import {AuthenticationBtn} from './auth';
 
 // pages
 import {
@@ -13,11 +13,7 @@ function App() {
 
   const {
     isLoading,
-    isAuthenticated,
-    error,
-    user,
-    loginWithRedirect,
-    logout,
+    error
   } = useAuth0();
 
   if(isLoading) {
@@ -28,18 +24,12 @@ function App() {
     return <div>oops... {error.message}</div>
   }
 
-  if(isAuthenticated) {
-    return (
-      <div>
-        <h2>Hello {user.name}</h2>
-        <p>
-          <button onClick={() => logout({ returnTo: window.location.origin })}>logout</button>
-        </p>
-      </div>
-    )
-  } else {
-    return <button onClick={() => loginWithRedirect}>login</button>
-  }
+  return (
+    <div>
+      <h1>Library App</h1>
+      <AuthenticationBtn/>
+    </div>
+  )
 
 }
 
