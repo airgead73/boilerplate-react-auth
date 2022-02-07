@@ -1,8 +1,9 @@
 function About() {
+  console.log('about page')
   return (
-    <div>
+    
       <h2>About</h2>
-    </div>
+    
   );
 }
 
