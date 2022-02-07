@@ -22,10 +22,9 @@ const useFetch = (resource, requestConfig) => {
   }
   
   // create request object
-
   const newRequest = new Request(resource, config);
 
-  // function to get data
+  // function to execute fetch
   const fetchData = async () => {
     try {
 
