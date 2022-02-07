@@ -5,6 +5,7 @@ import { AuthenticationBtn } from './auth';
 // pages
 import {
   Home,
+  About,
   Dashboard,
   PageNotFound,
   Profile
@@ -38,6 +39,7 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route element={<ProtectedRoutes/>}>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/profile" element={<Profile/>}/>
