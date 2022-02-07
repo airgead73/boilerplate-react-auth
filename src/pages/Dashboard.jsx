@@ -11,9 +11,12 @@ function Dashboard() {
       <h2>dashboard</h2>
       { error && <div>{ error }</div> }
       { isPending && <div>products loading...</div> }
+      <div className="figure-container">
       { products && products.map((product) => (
         <Figure key={product.id} item={product}/>
       ))}
+      </div>
+
     </div>
   )
 
