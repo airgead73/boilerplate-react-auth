@@ -1,5 +1,6 @@
 import useFetch from '../hooks/useFetch';
 import { BASEURL } from '../constants';
+import { Figure } from '../components';
 
 function Dashboard() {
 
@@ -11,7 +12,7 @@ function Dashboard() {
       { error && <div>{ error }</div> }
       { isPending && <div>products loading...</div> }
       { products && products.map((product) => (
-        <li key={product.id}>{product.title}</li>
+        <Figure key={product.id} item={product}/>
       ))}
     </div>
   )
