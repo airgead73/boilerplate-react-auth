@@ -1,6 +1,8 @@
+$color: darkslategray;
+
 h1 {
   text-align: center;
-  background-color: darkslategray;
+  background-color: $color;
   color: white;
   padding: 10px 0;
 }
