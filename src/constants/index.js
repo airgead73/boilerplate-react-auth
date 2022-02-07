@@ -1,5 +1,5 @@
 import {
-  URI_PRODUCTS
+  BASEURL
 } from './uri';
 
 import {
@@ -8,7 +8,7 @@ import {
 } from './access';
 
 export {
-  URI_PRODUCTS,
+  BASEURL,
   DOMAIN,
   CLIENTID
 }
