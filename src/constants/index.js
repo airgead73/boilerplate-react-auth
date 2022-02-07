@@ -1,6 +1,5 @@
 import {
-  URI_AUTHORS,
-  URI_BOOKS
+  URI_PRODUCTS
 } from './uri';
 
 import {
@@ -9,8 +8,7 @@ import {
 } from './access';
 
 export {
-  URI_AUTHORS,
-  URI_BOOKS,
+  URI_PRODUCTS,
   DOMAIN,
   CLIENTID
 }

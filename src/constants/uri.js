@@ -1,7 +1,6 @@
-const URI_AUTHORS = "http://localhost:5000/authors";
-const URI_BOOKS = "http://localhost:5000/books";
+const { BASEURL } = process.env;
+const URI_PRODUCTS = `${BASEURL}/products`;
 
 export {
-  URI_AUTHORS,
-  URI_BOOKS
+  URI_PRODUCTS
 };
