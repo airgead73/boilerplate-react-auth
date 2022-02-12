@@ -4,7 +4,7 @@ import { Figure } from '../components';
 
 function Dashboard() {
 
-  const { data: products, error, isPending } = useFetch(`${BASEURL}/products`);
+  const { data: products, error, isPending } = useFetch(`${BASEURL}/products?limit=5&sort=desc`);
 
   return (
     <div>
